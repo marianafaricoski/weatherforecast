@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Previsao do tempo </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" >
+    
+</head>
+<body>
+    <div class="row title">
+        <div class="col-lg-12">
+            <h1>Previsão do tempo</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row atual">
+          <div class="col-lg-6 col-lg-offset-3">
+            <div class="input-group" id="bar">
+              <input type="text" class="form-control" placeholder="Digite uma cidade..." id="barra">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" id="pesquisa" data-toggle="modal" data-target=".modal1">
+                    <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-lg-offset-4 jumbotron tempo-atual">
+          </div>
+        </div>
+
+        <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="meumodal" aria-hidden="true" id="meumodal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body">
+	                    <button type="button" class="btn btn-info btn-md btn-block info" id="atual_modal"> Hoje </button>
+	                    <button type="button" class="btn btn-info btn-md btn-block info" id="prox_modal"> Próximos 5 dias </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row previsao">
+            <div class="col-lg-4 col-lg-offset-4">
+		<div class="jumbotron" id="forecast-container">
+			
+		</div>            
+        </div>
+
+    </div>
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+		                <div class="modal-header" id="header-1"></div>
+		                <div class="modal-body" id="body-1"></div>
+                    </div>
+                </div>
+        	</div>
+
+        	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-2">
+                <div class="modal-dialog">
+                	<div class="modal-content">
+		                <div class="modal-header" id="header-2"></div>
+		                <div class="modal-body" id="body-2"></div>
+                    </div>
+                </div>
+        	</div>
+        	</div>
+
+        	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-3">
+                <div class="modal-dialog">
+                	<div class="modal-content">
+		                <div class="modal-header" id="header-3"></div>
+		                <div class="modal-body" id="body-3"></div>
+                    </div>
+                </div>
+        	</div>
+        	</div>
+
+        	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-4">
+                <div class="modal-dialog">
+                	<div class="modal-content">
+		                <div class="modal-header" id="header-4"></div>
+		                <div class="modal-body" id="body-4"></div>
+                    </div>
+                </div>
+        	</div> 
+        	</div>
+
+        	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-5">
+                <div class="modal-dialog">
+                	<div class="modal-content">
+		            <div class="modal-header" id="header-5"></div>
+		            <div class="modal-body" id="body-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ajax.js"></script>
+
+</body>
+</html>
+

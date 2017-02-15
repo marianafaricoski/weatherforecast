@@ -1,0 +1,19 @@
+body {
+    background-color: #00BFFF;
+    font-family: Verdana, serif;
+}
+
+.title{
+    padding: 26px;
+    background-color: #00BFFF;
+    color: #000000;
+    text-align: center;
+}
+
+#bar {
+    margin-bottom: 30px;
+}
+
+
+
+
